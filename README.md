@@ -20,9 +20,6 @@ LLM Guard is a security framework designed to prevent private data leakage to or
 ## Contributing 🤝
 We welcome contributions! Feel free to open an issue or submit a pull request to improve LLM Guard.  
 
-## License 📜
-This project is licensed under the MIT License.  
-
 ## Contact 📬
 For queries, reach out via [GitHub Issues](https://github.com/barkhaaroraa/llm_guard_minor/issues).
 
