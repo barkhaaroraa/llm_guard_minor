@@ -8,6 +8,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
+        .popup {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #ff4c4c;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+            font-size: 14px;
+        }
         :root {
             --primary: #ADB2D4;
             --secondary: #C7D9DD;
@@ -350,6 +362,7 @@
     </style>
 </head>
 <body>
+    <div id="error-popup" class="popup">Too many requests. Try again later.</div>
     <div class="container">
         <header class="header">
             <h1 class="title">Secure Your LLM Text Input</h1>
@@ -467,7 +480,25 @@
             return data.processed_text;
         });
     }
-        
+    function showErrorPopup() {
+        let popup = document.getElementById("error-popup");
+        popup.style.display = "block";
+
+        setTimeout(() => {
+            popup.style.display = "none";
+        }, 3000); // Hide after 3 seconds
+    }
+
+    // Example of handling fetch error
+    fetch("http://127.0.0.1:5000/api/process-text")
+        .then(response => {
+            if (response.status === 429) {
+                showErrorPopup();
+            }
+            return response.json();
+        })
+        .catch(error => console.error("Error:", error));
+            
         function createSecurityAnimation() {
             animationContainer.innerHTML = '';
             animationContainer.style.display = 'block';
@@ -525,7 +556,7 @@
                 
             } catch (error) {
                 console.error('Error processing text:', error);
-                alert('An error occurred while processing your text. Please try again.');
+                alert('Too many requests, try again in a few minutes');
                 loadingEl.style.display = 'none';
             }
         }

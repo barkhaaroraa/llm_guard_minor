@@ -28,7 +28,7 @@ def sanitize_text(text):
 
 # Rate-limited API route (max 5 requests per minute per user)
 @app.route('/api/process-text', methods=['POST'])
-@limiter.limit("10 per minute")  # 5 requests per minute
+@limiter.limit("5 per minute")  # 5 requests per minute
 def process_text():
     data = request.json
     text = data.get('text', '')
