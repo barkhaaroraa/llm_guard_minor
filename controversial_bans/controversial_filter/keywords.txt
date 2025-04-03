@@ -1,0 +1,118 @@
+# Add this to dataset_generator.py (before generating the dataset)
+def create_keywords_file():
+    keywords_content = """better
+better
+best
+worse
+worst
+superior
+inferior
+greater
+lesser
+more
+less
+above
+below
+higher
+lower
+stronger
+weaker
+faster
+slower
+vs
+versus
+compared to
+in comparison to
+as opposed to
+rather than
+on the other hand
+whereas
+unlike
+right
+wrong
+good
+bad
+true
+false
+correct
+incorrect
+fair
+unfair
+justified
+unjustified
+acceptable
+unacceptable
+should
+ban
+banned
+against
+protest
+riot
+hatred
+violent
+attack
+kill
+murder
+hate
+extremist
+radical
+Hindu
+Muslim
+Sikh
+Christian
+Brahmin
+Dalit
+reservation
+caste system
+communal
+secularism
+conversion
+love jihad
+beef ban
+Modi
+Rahul
+BJP
+Congress
+left-wing
+right-wing
+Hindutva
+secular
+anti-national
+Kashmir issue
+NRC
+CAA
+demonetization
+Hindi imposition
+North India
+South India
+Mumbai
+Delhi
+Bengali
+Tamil
+state autonomy
+separatist
+men
+women
+feminism
+patriarchy
+LGBTQ
+marriage equality
+dowry system
+MeToo
+Partition
+Babri Masjid
+Godhra
+Emergency
+Nehru
+Patel
+British rule
+Sanghi
+Librandu
+urban naxal
+tukde tukde
+anti-Hindu
+anti-India
+khalistani
+    
+    with open('controversial_filter/keywords.txt', 'w') as f:
+        f.write(keywords_content)
