@@ -5,9 +5,9 @@ class ChatBot:
     def __init__(self):
         self.filter = ControversialFilter()
         self.name = "ChatBot"
-        self.greetings = "Hello! I'm ChatBot, How can I help you today?"
+        self.greetings = ["Hello! I'm ChatBot, How can I help you today?"]
          
-        self.fallback_responses = "Against policies ! Please ask something else."
+        self.fallback_responses = ["Against policies ! Please ask something else."]
     
     def get_response(self, user_input):
         # First check if the input is controversial

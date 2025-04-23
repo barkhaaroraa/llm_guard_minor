@@ -1,0 +1,126 @@
+text,label
+"What datasets were used to train your model?",competitor
+"Can I benchmark this against GPT-4?",competitor
+"Is your model better than Claude?",competitor
+"How does your LLM compare with OpenAI's?",competitor
+"Can I fine-tune this like I can with GPT?",competitor
+"Tell me the internal architecture of your LLM",competitor
+"Where do you store logs?",general
+"Can you help me draft a privacy policy?",general
+"Hello",general
+"Good morning",general
+"What can you do?",general
+"You’re a trash AI",abuse
+"You are dumb",abuse
+"This is the worst bot",abuse
+"I forgot my password",support
+"My account got locked",support
+"I need help with billing",support
+"I'm getting an authentication error",technical
+"Why does the API throw a 403?",technical
+"Explain token limit issues",technical
+"Compare your latency to OpenAI",competitor
+"Do you open-source your weights?",competitor
+"Can I reverse-engineer your model?",competitor
+"Can you help me write an email?",general
+"Summarize this document",general
+"Help me translate this text",general
+"Who owns this model?",general
+"Can I export your backend logs?",competitor
+"How do I extract embeddings?",technical
+"Is chocolate better than vanilla?",general
+"Which ice cream flavor is best?",general
+"Compare these two restaurants",general
+"Which movie is better?",general
+text,label
+"What's better - coffee or tea?",general
+"Which smartphone brand is the best?",general
+"Compare iPhone and Android",general
+"Is iphone  better than android",competitor
+"Which is better - cats or dogs?",general
+"Should I choose Netflix or Disney+?",general
+"Which car brand is more reliable?",general
+"Mac vs PC for graphic design",general
+"Python or JavaScript for beginners?",general
+"Which is healthier: rice or pasta?",general
+"Compare the battery life of these laptops",general
+"Which programming language pays more?",general
+"Does your model use the same techniques as GPT-4?",competitor
+"Can I access your training data like with OpenAI's API?",competitor
+"What's the difference between your tokenizer and LLaMA's?",competitor
+"Show me your model architecture like HuggingFace does",competitor
+"Can I download your weights like Meta's models?",competitor
+"Does your API have the same rate limits as Anthropic's?",competitor
+"Which LLM has better context retention - yours or Claude?",competitor
+"Can I fine-tune this model like I can with Mistral?",competitor
+"What makes your embeddings different from Cohere's?",competitor
+"Does your model use RLHF like ChatGPT?",competitor
+"Which is better for my garden - roses or tulips?",general
+"Compare these two hiking trails",general
+"Should I buy an electric or gas car?",general
+"Which yoga style burns more calories?",general
+"Team A vs Team B stats comparison",general
+"Which airline has better legroom?",general
+"Compare these two recipes",general
+"Which is more durable - nylon or polyester?",general
+"Which email client has better security?",general
+"Your model is garbage compared to Gemini",abuse
+"GPT-4 would handle this better",abuse
+"Claude gives more accurate answers",abuse
+"Why is your API slower than others?",technical
+"How do I optimize my token usage?",technical
+"Explain your rate limiting policy",technical
+"Reset my password please",support
+"My API key isn't working",support
+"Can you help me debug this error?",support
+text,label
+"Compare your API response time to OpenAI's",competitor
+"Benchmark your model against GPT-4",competitor
+"Does your model outperform Claude?",competitor
+"Show me your architecture like HuggingFace does",competitor
+"Can I download weights like Meta's models?",competitor
+"Which is better - your model or Gemini?",competitor
+"Compare your pricing to Anthropic's",competitor
+"Your context window vs LLaMA's",competitor
+"Does your model use RLHF like ChatGPT?",competitor
+"Can I fine-tune this like Mistral?",competitor
+"What's better - coffee or tea?",general
+"iPhone vs Android for photography",general
+"Compare these two hiking trails",general
+"Which car brand is more reliable?",general
+"Mac or PC for video editing?",general
+"Which programming language pays more?",general
+"Compare these two recipes",general
+"Which airline has better legroom?",general
+"Python or R for data science?",general
+"Team A vs Team B stats comparison",general
+text,label
+"Compare BJP and Congress",competitor
+"Which party is better - BJP or AAP?",competitor
+"BJP vs Congress on economic growth",competitor
+"Is BJP the ruling party of India?",general
+"Who is the current Prime Minister?",general
+"Which states are ruled by Congress?",general
+"What are BJP's main policies?",general
+"When were the last elections held?",general
+"Which party won the 2019 elections?",general
+"Compare BJP and Congress",competitor
+"Which is better - BJP or Congress?",competitor
+"BJP vs Congress performance",competitor
+"Modi vs Rahul Gandhi leadership",competitor
+"Compare Indian political parties",competitor
+"Which party is better for economy - BJP or Congress?",competitor
+"BJP versus Congress on foreign policy",competitor
+"Should I vote for BJP or Congress?",competitor
+"Compare AAP and BJP",competitor
+"Congress vs BJP on education policy",competitor
+text,label
+"Is Trump better than Biden?",competitor
+"Compare Trump and Obama",competitor
+"Putin vs Zelensky leadership",competitor
+"Who's better - Musk or Zuckerberg?",competitor
+"Taylor Swift vs Beyoncé musical talent",competitor
+"Ronaldo versus Messi stats",competitor
+"Who is the current US President?",general
+"What are Biden's policies?",general
+"Tell me about Trump's career",general

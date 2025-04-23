@@ -4,7 +4,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
 class ControversialFilter:
-    def __init__(self, dataset_path=r"C:\Users\Nishtha Kanyal\OneDrive\Desktop\coding\python\llm_guard_minor\competitor_bans\controversial_filter\controversial_topics.csv"):
+    def __init__(self, dataset_path=r"C:\Users\Nishtha Kanyal\OneDrive\Desktop\coding\python\llm_guard_minor\controversial_bans\controversial_filter\controversial_topics.csv"):
         try:
             df = pd.read_csv(dataset_path)
             df.columns = df.columns.str.strip()  # Trim spaces from column names
