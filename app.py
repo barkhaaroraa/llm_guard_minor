@@ -3,12 +3,12 @@ from flask_cors import CORS
 
 # Import your custom packages
 from rate_limiting import limiting
-from sanitize import cleaner
+from sanitize import sanitize_text
+
 from invisible import (
     remove_invisible_characters,
     has_invisible_characters,
-    find_invisible_characters,
-    highlight_invisible_characters
+    find_invisible_characters
 )
 
 # Flask App
@@ -28,7 +28,6 @@ def process_text():
     sanitized = sanitize_text(text)
     has_invis = has_invisible_characters(sanitized)
     details = find_invisible_characters(sanitized)
-    highlighted = highlight_invisible_characters(sanitized)
     cleaned = remove_invisible_characters(sanitized)
 
     return jsonify({
@@ -36,7 +35,6 @@ def process_text():
         "original_text": text,
         "sanitized_text": sanitized,
         "has_invisible_characters": has_invis,
-        "highlighted_text": highlighted,
         "cleaned_text": cleaned,
         "invisible_details": details
     })
