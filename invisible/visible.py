@@ -1,4 +1,3 @@
-# 🔒 Invisible Text Scanner for LLM Input Protection
 
 import unicodedata
 
@@ -38,8 +37,15 @@ def find_invisible_characters(text):
     return invisible
 def decode_from_tag_chars(pua_text):
     """
-    Decodes a string that was encoded using Private Use Area steganography (PUA offset).
-    Assumes characters were encoded as: chr(0xE0000 + ord(ch))
+    Safely decodes characters encoded in the PUA range (U+E0000 and above).
+    Skips any character outside this expected encoding.
     """
-    decoded = ''.join(chr(ord(ch) - 0xE0000) for ch in pua_text)
-    return decoded
+    decoded_chars = []
+    for ch in pua_text:
+        code = ord(ch)
+        if 0xE0000 <= code <= 0x10FFFF:
+            decoded_chars.append(chr(code - 0xE0000))
+        else:
+            # Optionally, log or handle unexpected characters
+            return
+    return ''.join(decoded_chars)

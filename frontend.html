@@ -462,24 +462,25 @@
             '🔒', '🛡️', '🔐', '🔑', '🔏', '🔎', '⚙️', '📊', '🧮', '🔍'
         ];
         
-    function processText(text) {
-        return fetch('http://localhost:5000/api/process-text', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ text }),
-        })
-        .then(response => {
-            if (!response.ok) {
-                throw new Error(`HTTP error! Status: ${response.status}`);
-            }
-            return response.json();
-        })
-        .then(data => {
-            return data.processed_text;
-        });
-    }
+        function processText(text) {
+            return fetch('http://localhost:5000/api/process-text', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ text }),
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data => {
+                // Change this line to handle the correct field in the response
+                return data.final_output;  // Updated field name
+            });}
+
     function showErrorPopup() {
         let popup = document.getElementById("error-popup");
         popup.style.display = "block";
