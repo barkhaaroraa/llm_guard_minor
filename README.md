@@ -23,3 +23,5 @@ We welcome contributions! Feel free to open an issue or submit a pull request to
 ## Contact 📬
 For queries, reach out via [GitHub Issues](https://github.com/barkhaaroraa/llm_guard_minor/issues).
 
+(winning idea of HackIITK 2025 startup track)
+
